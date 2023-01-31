@@ -20,7 +20,7 @@ function NavBar() {
           </li>
           <li onClick={function(){navigate("/profile")}} className="navbarListItem">
             <PersonOutlineIcon fill={location.pathname === "/profile" ? "#2c2c2c" : "#a9a9a9"}  height="36px" width="36px" />
-            <p className={location.pathname === "/profilr" ? "navbarListItemNameActive" : "navbarListItemName"}>Profile</p>
+            <p className={location.pathname === "/profile" ? "navbarListItemNameActive" : "navbarListItemName"}>Profile</p>
           </li>
         </ul>
       </nav>

@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Explore from "./pages/Explore";
+import "react-toastify/dist/ReactToastify.css"
+import { ToastContainer } from "react-toastify"
+import Explore from "./pages/Explore"
 import SignUp from "./pages/SignUp"
 import SignIn from "./pages/SignIn"
 import Profile from "./pages/Profile"
@@ -7,6 +9,16 @@ import Offers from "./pages/Offers"
 import ForgotPassword from "./pages/ForgotPassword"
 import NotFoundPage from "./pages/NotFoundPage"
 import NavBar from "./components/NavBar"
+const toastOptions = {
+  position: "top-right",
+  autoClose: 5000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined,
+  theme: "light",
+  }
 function App() {
   return (
     <>
@@ -20,7 +32,8 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>
-        <NavBar/>
+        <NavBar />
+        <ToastContainer/>
       </Router>
     </>
   );
