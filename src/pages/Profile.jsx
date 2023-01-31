@@ -102,11 +102,11 @@ function Profile() {
           </form>
         </div>
 
-        {/* <Link to='/create-listing' className='createListing'>
+        <Link to='/create-listing' className='createListing'>
           <img src={homeIcon} alt='home' />
           <p>Sell or rent your home</p>
           <img src={arrowRight} alt='arrow right' />
-        </Link> */}
+        </Link>
 
 
       </main>
