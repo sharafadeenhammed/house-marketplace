@@ -36,6 +36,7 @@ function SignIn() {
       const userCredentials = await signInWithEmailAndPassword(auth, email, password);
       if (userCredentials.user) {
         navigate("/");
+        toast.success("You're Logged in sucessfully")
       }
     } catch (err) {
       toast.error("Bad Login Credentails !");

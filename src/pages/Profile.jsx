@@ -52,6 +52,7 @@ function Profile() {
       toast.error("Error Updating Profile");
     }
     toast.success("profile updated sucessfully");
+
   }
 
   const onChange = (e) => {
