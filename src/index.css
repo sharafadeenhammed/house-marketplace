@@ -71,7 +71,16 @@ button {
   align-items: center;
   justify-content: center;
 }
-
+.googleButton{
+  border:1px solid  transparent;
+  border-radius: 50%;
+  padding: 2px;
+  transition: 0.2s ;
+}
+.googleButton:hover{
+  /* border:1px solid #2d2c2c; */
+  transform: scale(1.15);
+}
 .removeIcon {
   cursor: pointer;
   position: absolute;
