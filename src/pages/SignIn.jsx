@@ -32,14 +32,15 @@ function SignIn() {
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
+      if (email === "" || password === "") return toast.error("email and password required")
       const auth = getAuth();
       const userCredentials = await signInWithEmailAndPassword(auth, email, password);
       if (userCredentials.user) {
         navigate("/");
-        toast.success("You're Logged in sucessfully")
+        toast.success("Logged in sucessfully")
       }
     } catch (err) {
-      toast.error("Bad Login Credentails !");
+      toast.error("Bad Login Credentails");
     }
 
 
