@@ -7,6 +7,7 @@ import SignIn from "./pages/SignIn"
 import Profile from "./pages/Profile"
 import Offers from "./pages/Offers"
 import ForgotPassword from "./pages/ForgotPassword"
+import Categoty from "./pages/Categoty"
 import NotFoundPage from "./pages/NotFoundPage"
 import NavBar from "./components/NavBar"
 const toastOptions = {
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Explore />} />
           <Route path="/offers" element={<Offers/>} />
+          <Route path="/category/:categoryName" element={<Categoty/>} />
           <Route path="/sign-in" element={<SignIn/>} />
           <Route path="/sign-up" element={<SignUp/>} />
           <Route path="/profile" element={<Profile/>} />

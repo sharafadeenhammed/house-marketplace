@@ -79,7 +79,7 @@ button {
 }
 .googleButton:hover{
   /* border:1px solid #2d2c2c; */
-  transform: scale(1.15);
+  transform: scale(1.25);
 }
 .removeIcon {
   cursor: pointer;
