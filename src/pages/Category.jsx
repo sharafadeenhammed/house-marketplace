@@ -14,7 +14,7 @@ import {
 import Spinner from "../components/Spinner";
 import ListingItem from "../components/ListingItem";
 
-function Categoty() {
+function Category() {
   const params = useParams();
   const [ listings, setListings ] = useState([]);
   const [ loading, setLoading ] = useState(true)
@@ -78,8 +78,8 @@ function Categoty() {
                 <ul className="categoryListings">
                   {listings.map(listing => {
                     return (
-                      <h3 key={listing.id}>{ listing.data.name}</h3>
-                    //  <ListingItem key={listing.id} listing={ listing.data } id={ listing.id } />
+                      // <h3 key={listing.id}>{ listing.data.name}</h3>
+                     <ListingItem key={listing.id} listing={ listing.data } id={ listing.id } />
                    )
                     
                   })}
@@ -92,4 +92,4 @@ function Categoty() {
   )
 }
 
-export default Categoty
+export default Category

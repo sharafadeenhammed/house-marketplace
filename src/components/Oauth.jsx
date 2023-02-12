@@ -6,7 +6,7 @@ import { db } from "../firebase.config"
 import { toast } from "react-toastify"
 function OAuth() {
   const navigate = useNavigate();
-  const location = useLocation();
+  // const location = useLocation();
 
   async function googleSignUp() {
     try {
