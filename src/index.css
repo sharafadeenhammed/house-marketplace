@@ -859,3 +859,15 @@ button {
   font-size: 0.8rem;
   opacity: 0.75;
 }
+.listing-img-container {
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.listing-img {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  margin: 10px;
+}
